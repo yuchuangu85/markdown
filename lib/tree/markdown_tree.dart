@@ -1,15 +1,14 @@
-import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'node.dart';
 
+// https://blog.csdn.net/u013425527/article/details/100174999
+
 class MarkdownTree extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+    return MarkdownTreeState();
   }
 }
 
