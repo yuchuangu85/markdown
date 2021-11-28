@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mx_markdown/file_manager/file_manager.dart';
 
 import 'node.dart';
 
@@ -27,12 +28,10 @@ class MarkdownTreeState extends State<MarkdownTree> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('tree'),
+        title: const Text('tree'),
       ),
-      body: Container(
-        child: Column(
-          children: _buildNode(expandList),
-        ),
+      body: Column(
+        children: _buildNode(expandList),
       ),
     );
   }
@@ -45,6 +44,8 @@ class MarkdownTreeState extends State<MarkdownTree> {
           child: ImageText(10.0 * node.depth, node.object.toString(),
               node.expend, node.isHasChildren),
           onTap: () {
+            FileManager fileManager = FileManager();
+            fileManager.openFile();
             if (node.isHasChildren) {
               if (node.expend) {
                 // 之前扩展状态，收起列表
@@ -92,7 +93,7 @@ class MarkdownTreeState extends State<MarkdownTree> {
 
   int nodeId = 1;
 
-  // 展开树， nodeId是要扩展的Node的id
+  // 展开树， nodeId是要展开的Node的id
   // 作法是遍历整个list，将直接挂在这个节点下面节点增加到一个临时列表
   void _expand(int nodeId) {
     // 保存临时列表
@@ -166,7 +167,7 @@ class ImageText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         alignment: Alignment.centerLeft,
-        decoration: BoxDecoration(color: Colors.greenAccent),
+        decoration: const BoxDecoration(color: Colors.greenAccent),
         width: double.infinity,
         height: 40,
         margin: EdgeInsets.only(left: margin),
@@ -175,12 +176,12 @@ class ImageText extends StatelessWidget {
             Visibility(
               visible: isHasChildren,
               child: Image.asset(isExpand
-                  ? 'images/arrow_down.png'
-                  : 'images/arrow_right.png'),
+                  ? 'assets/images/arrow_down.png'
+                  : 'assets/images/arrow_right.png'),
             ),
             Text(
               str,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 17,
               ),
             ),
