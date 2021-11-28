@@ -34,6 +34,7 @@ class MenuFile {
               label: 'Open',
               enabled: true,
               shortcut: LogicalKeySet(
+                LogicalKeyboardKey.meta,
                 LogicalKeyboardKey.open,
               ),
               onClicked: () {

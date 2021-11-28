@@ -9,7 +9,8 @@
 ## 技术点
 * 左右联动
 * 布局手动调节大小
+* tree view
 
 ## 资源
-* https://github.com/google/flutter-desktop-embedding
-* 
+* https://github.com/google/flutter-desktop-embedding  file_chooser, menubar, window_size
+* https://github.com/mbaumgartenbr/flutter_tree_view
