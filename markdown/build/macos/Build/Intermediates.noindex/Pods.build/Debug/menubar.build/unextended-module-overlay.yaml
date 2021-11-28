@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Users/yuchuan/CodeMX/MX/markdown/markdown/build/macos/Build/Products/Debug/menubar/menubar.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Users/yuchuan/CodeMX/MX/markdown/markdown/build/macos/Build/Intermediates.noindex/Pods.build/Debug/menubar.build/unextended-module.modulemap",
+    }]
+  }]
+}

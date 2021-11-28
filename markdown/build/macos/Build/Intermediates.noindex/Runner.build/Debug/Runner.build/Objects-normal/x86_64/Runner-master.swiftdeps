@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "79aef02e90101e4374d32f07dca42413333317180c201b33b648567cfb3a4aac"
+build_start_time: [1638081506, 615501880]
+build_end_time: [1638081511, 106111049]
+inputs:
+  "/Users/yuchuan/CodeMX/MX/markdown/macos/Flutter/GeneratedPluginRegistrant.swift": [1638081490, 201482295]
+  "/Users/yuchuan/CodeMX/MX/markdown/macos/Runner/AppDelegate.swift": [1631541365, 150618553]
+  "/Users/yuchuan/CodeMX/MX/markdown/macos/Runner/MainFlutterWindow.swift": [1631541365, 152006864]

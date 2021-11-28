@@ -1,0 +1,18 @@
+Target dependency graph (6 targets)
+FlutterMacOS in Pods, no dependencies
+menubar in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+window_size in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+Flutter Assemble in Runner, depends on:
+menubar in Pods (implicit dependency via options '-framework menubar' in build setting 'OTHER_LDFLAGS')
+window_size in Pods (implicit dependency via options '-framework window_size' in build setting 'OTHER_LDFLAGS')
+Pods-Runner in Pods, depends on:
+FlutterMacOS in Pods (explicit)
+menubar in Pods (explicit)
+window_size in Pods (explicit)
+Runner in Runner, depends on:
+Flutter Assemble in Runner (explicit)
+Pods-Runner in Pods (implicit dependency via file 'Pods_Runner.framework' in build phase 'Link Binary')
+menubar in Pods (implicit dependency via options '-framework menubar' in build setting 'OTHER_LDFLAGS')
+window_size in Pods (implicit dependency via options '-framework window_size' in build setting 'OTHER_LDFLAGS')
