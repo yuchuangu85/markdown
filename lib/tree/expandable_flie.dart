@@ -2,6 +2,7 @@ import 'dart:io';
 
 class ExpandableFile {
   late FileSystemEntity file;
+  late String name;
   late int level;
   late bool canExpand;
   late List<ExpandableFile> children;
@@ -21,4 +22,6 @@ class ExpandableFile {
       }
     }
   }
+
+
 }

@@ -14,3 +14,4 @@
 ## 资源
 * https://github.com/google/flutter-desktop-embedding  file_chooser, menubar, window_size
 * https://github.com/mbaumgartenbr/flutter_tree_view
+* https://github.com/asjqkkkk/markdown_widget
